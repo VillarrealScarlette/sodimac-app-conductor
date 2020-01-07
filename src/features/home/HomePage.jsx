@@ -9,7 +9,7 @@ import {
   Input,
   Select
 } from "semantic-ui-react";
-
+import { NavLink, Link, withRouter } from "react-router-dom";
 function HomePage({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
@@ -33,7 +33,7 @@ function HomePage({ history }) {
         </select>
         <Input type="text" placeholder="Patente Camión">
         </Input>
-        <Button onClick={() => history.push("/events")} size="huge" inverted>
+        <Button onClick={() => history.push("/order")} size="huge" inverted>
           Ingresar
           <Icon name="right arrow" inverted />
         </Button>
@@ -41,3 +41,5 @@ function HomePage({ history }) {
     </Segment>
   );
 }
+
+export default withRouter(HomePage);
