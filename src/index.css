@@ -34,6 +34,10 @@ body {
   height: 100vh;
 }
 
+#img-logo { 
+  width: 80%;
+}
+
 /* .masthead.segment {
   min-height: 700px;
   padding: 1em 0 !important;
@@ -44,9 +48,12 @@ body {
   margin-left: 0.5em;
 }
 
-.masthead h1.ui.header {
-  font-size: 4em;
+.masthead h3.ui.header {
+  font-size: 2em;
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .masthead h2 {
@@ -54,6 +61,14 @@ body {
   font-weight: normal;
 }
 
+.margin.element {
+  margin: 10px 0px;
+}
+
+.container.login {
+  width: 80%;
+  height: auto;
+}
 /* .footer.segment {
   padding: 5em 0;
 } */
@@ -124,4 +139,12 @@ body {
 .ui.text.container {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  h3.ui.header {
+    font-size: 1.5em!important;
+  }
+
 }
