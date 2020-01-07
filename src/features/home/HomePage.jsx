@@ -5,7 +5,9 @@ import {
   Header,
   Image,
   Button,
-  Icon
+  Icon,
+  Input,
+  Select
 } from "semantic-ui-react";
 
 function HomePage({ history }) {
@@ -19,15 +21,23 @@ function HomePage({ history }) {
             alt="logo"
             style={{ marginBottom: 12 }}
           />
-          Invents
+          Sodimac Conductor
         </Header>
+        <Input type="text" placeholder="RUT 11111111-1" min="0" max="10">
+        </Input>
+        <select class="ui search dropdown">
+          <option value="">Empresa</option>
+          <option value="AL">Sodimac</option>
+          <option value="AK">CIC</option>
+          <option value="AZ">Rosen</option>
+        </select>
+        <Input type="text" placeholder="Patente Camión">
+        </Input>
         <Button onClick={() => history.push("/events")} size="huge" inverted>
-          Get started now!
+          Ingresar
           <Icon name="right arrow" inverted />
         </Button>
       </Container>
     </Segment>
   );
 }
-
-export default HomePage;

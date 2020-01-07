@@ -120,3 +120,8 @@ body {
 .dropzone--isActive {
   border: dashed 3px green;
 }
+
+.ui.text.container {
+  display: flex;
+  flex-direction: column;
+}
