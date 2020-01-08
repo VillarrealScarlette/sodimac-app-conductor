@@ -5,7 +5,7 @@ import NavBar from "../../features/nav/navBar/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
-import Order from "../../features/order/order";
+import Order from "../../features/order/Order";
 import EventDetailedPage from "../../features/event/EventDetailed/EventDetailedPage";
 import PeopleDashboard from "../../features/user/PeopleDashboard/PeopleDashboard";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
@@ -13,6 +13,8 @@ import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
+import CompletedTrip from "../../features/route/CompletedTrip";
+import RouteTime from "../../features/route/RouteTime";
 
 class App extends Component {
   render() {
@@ -27,7 +29,6 @@ class App extends Component {
               <NavBar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
-
                 {/* <Route path="/events/:id" component={EventDetailedPage} /> */}
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/profile/:id" component={UserDetailedPage} />
@@ -35,7 +36,10 @@ class App extends Component {
                 {/* <Route path="/events" component={EventDashboard} /> */}
                 {/*<Route path="/createevent" component={EventForm} />*/}
                 <Route path="/detailsroute" component={DetailsRoute} />
+                <Route path="/detailsroute" component={DetailsRoute} />
                 <Route path="/map" component={Map} />
+                <Route path="/completedtrip" component={CompletedTrip} />
+                <Route path="/routetime" component={RouteTime} />
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>

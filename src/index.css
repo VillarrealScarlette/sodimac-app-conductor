@@ -212,6 +212,19 @@ input {
   text-shadow: none!important;
 }
 
+.charguing.route {
+  display: inline-block !important;
+}
+
+.makeStyles-root-1 {
+  width: 70%;
+  display: grid;
+}
+
+.charging {
+  font-size: 1.4em;
+}
+
 @media only screen and (max-width: 767px) {
   
   h3.ui.header {
