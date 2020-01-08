@@ -25,13 +25,12 @@ body {
 .masthead {
   display: flex;
   align-items: center;
-  background-image: linear-gradient(
-    135deg,
-    rgb(24, 42, 115) 0%,
-    rgb(33, 138, 174) 69%,
-    rgb(32, 167, 172) 89%
-  ) !important;
+  background: white!important;
   height: 100vh;
+}
+
+#img-logo { 
+  width: 80%;
 }
 
 /* .masthead.segment {
@@ -44,9 +43,14 @@ body {
   margin-left: 0.5em;
 }
 
-.masthead h1.ui.header {
-  font-size: 4em;
+.masthead h3.ui.header {
+  font-size: 2em;
+  margin-bottom: 0.5em;
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#152935;
 }
 
 .masthead h2 {
@@ -54,6 +58,14 @@ body {
   font-weight: normal;
 }
 
+.margin.element {
+  margin: 10px 0px;
+}
+
+.container.login {
+  width: 80%;
+  height: auto;
+}
 /* .footer.segment {
   padding: 5em 0;
 } */
@@ -71,12 +83,7 @@ body {
 }
 
 .ui.fixed.menu {
-  background-image: linear-gradient(
-    135deg,
-    rgb(24, 42, 115) 0%,
-    rgb(33, 138, 174) 69%,
-    rgb(32, 167, 172) 89%
-  ) !important;
+  background: white !important;
 }
 
 .ui.main.container,
@@ -130,25 +137,53 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  font-size:10px;
-  margin-top: 250px;
+  flex-direction: column;
+  background: white !important;
+  height: 100vh;
 }
 
 #fontOrder{
  text-align: center;
+ /* font-size:10px; */
+ color:#333;
+ padding-top: 200px;
+ padding-left: 10px;
+ padding-right: 10px;
 }
 
 .inputorder{
+  text-align: center;
   height: 30px;
   width: 250px;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .btnOrder{
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 10px;
+  /* border: dashed 3px #eee; */
+  border-radius: 20px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  text-align: center !important;
+ color: #FEFEFE !important;
+ background: #DD0021 !important;
+}
+p {
+  font-size: 1.28em;
+}
+
+.header.text {
+  margin-bottom: 2em!important;
+}
+
+.btn.detailsroute {
+  margin-top: 1em!important;
+}
+
+@media only screen and (max-width: 767px) {
   
+  h3.ui.header {
+    font-size: 1.5em!important;
+  }
+
 }

@@ -11,13 +11,14 @@ import PeopleDashboard from "../../features/user/PeopleDashboard/PeopleDashboard
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 import EventForm from "../../features/event/EventForm/EventForm";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
+import DetailsRoute from "../../features/route/DetailsRoute";
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <Route exact path="/" component={HomePage} />
-        
+        <Route path ="/order" component={ Order}/>
         <Route
           path="/(.+)"
           render={() => (
@@ -25,13 +26,14 @@ class App extends Component {
               <NavBar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
-                <Route path ="/order" component={ Order}/>
+
                 <Route path="/events/:id" component={EventDetailedPage} />
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/profile/:id" component={UserDetailedPage} />
                 <Route path="/settings" component={SettingsDashboard} />
                 <Route path="/events" component={EventDashboard} />
                 <Route path="/createevent" component={EventForm} />
+                <Route path="/detailsroute" component={DetailsRoute} />
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>
