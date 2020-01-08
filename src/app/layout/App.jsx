@@ -11,6 +11,7 @@ import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 import EventForm from "../../features/event/EventForm/EventForm";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
+import Map from "../../features/route/Map";
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
                 <Route path="/events" component={EventDashboard} />
                 <Route path="/createevent" component={EventForm} />
                 <Route path="/detailsroute" component={DetailsRoute} />
+                <Route path="/map" component={Map} />
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>
