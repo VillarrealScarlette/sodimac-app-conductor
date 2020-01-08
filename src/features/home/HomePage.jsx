@@ -8,7 +8,7 @@ import {
   Icon,
   Input
 } from "semantic-ui-react";
-import { withRouter } from "react-router-dom";
+import {NavLink, Linnk, withRouter } from "react-router-dom";
 
 function HomePage({ history }) {
   return (
@@ -24,7 +24,7 @@ function HomePage({ history }) {
           />
           Ingrese sus datos
         </Header>
-        <Container text className="container login">
+        <Container text className="container login"/>
           <Input type="text" className="margin element" placeholder="RUT 11111111-1" min="0" max="10">
           </Input>
           <select className="margin element" class="ui search dropdown">
@@ -35,14 +35,14 @@ function HomePage({ history }) {
           </select>
           <Input type="text" placeholder="Patente Camión" className="margin element">
           </Input>
-          <Button onClick={() => history.push("/detailsroute")} size="huge" inverted>
+          <Button onClick={() => history.push("/order")} size="huge" inverted>
             INGRESAR
             <Icon name="right arrow" inverted />
           </Button>
         </Container>
-      </Container>
-    </Segment>
-  );
+        
+        </Segment>
+  )
 }
 
 export default withRouter(HomePage);

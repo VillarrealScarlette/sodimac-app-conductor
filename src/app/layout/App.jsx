@@ -5,6 +5,7 @@ import NavBar from "../../features/nav/navBar/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
+import Order from "../../features/order/order";
 import EventDetailedPage from "../../features/event/EventDetailed/EventDetailedPage";
 import PeopleDashboard from "../../features/user/PeopleDashboard/PeopleDashboard";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
@@ -18,6 +19,7 @@ class App extends Component {
     return (
       <Fragment>
         <Route exact path="/" component={HomePage} />
+        <Route path ="/order" component={ Order}/>
         <Route
           path="/(.+)"
           render={() => (
@@ -25,6 +27,7 @@ class App extends Component {
               <NavBar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
+
                 <Route path="/events/:id" component={EventDetailedPage} />
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/profile/:id" component={UserDetailedPage} />
