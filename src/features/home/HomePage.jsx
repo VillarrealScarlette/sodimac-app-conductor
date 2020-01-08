@@ -36,7 +36,7 @@ function HomePage({ history }) {
           <Input type="text" placeholder="Patente Camión" className="margin element">
           </Input>
           <Button onClick={() => history.push("/detailsroute")} size="huge" inverted>
-            Ingresar
+            INGRESAR
             <Icon name="right arrow" inverted />
           </Button>
         </Container>
