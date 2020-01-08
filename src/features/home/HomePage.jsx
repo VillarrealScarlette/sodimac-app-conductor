@@ -8,6 +8,7 @@ import {
   Icon,
   Input
 } from "semantic-ui-react";
+import { withRouter } from "react-router-dom";
 
 function HomePage({ history }) {
   return (
@@ -34,7 +35,7 @@ function HomePage({ history }) {
           </select>
           <Input type="text" placeholder="Patente Camión" className="margin element">
           </Input>
-          <Button onClick={() => history.push("/events")} size="huge" inverted>
+          <Button onClick={() => history.push("/detailsroute")} size="huge" inverted>
             Ingresar
             <Icon name="right arrow" inverted />
           </Button>
@@ -44,4 +45,4 @@ function HomePage({ history }) {
   );
 }
 
-export default HomePage;
+export default withRouter(HomePage);
