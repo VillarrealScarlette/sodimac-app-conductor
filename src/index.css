@@ -25,7 +25,7 @@ body {
 .masthead {
   display: flex;
   align-items: center;
-  background: white!important;
+  background: white !important;
   height: 100vh;
 }
 
@@ -50,7 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:#152935;
+  color: #152935;
 }
 
 .masthead h2 {
@@ -131,6 +131,11 @@ body {
 .ui.text.container {
   display: flex;
   flex-direction: column;
+  text-align: -webkit-center;
+}
+
+.ui.text.container.details {
+  display: block !important;
 }
 
 .order{
@@ -169,21 +174,48 @@ body {
  background: #DD0021 !important;
 }
 p {
-  font-size: 1.28em;
+  font-size: 1.1em;
+  color: #152935;
 }
 
 .header.text {
-  margin-bottom: 2em!important;
+  margin-bottom: 1em!important;
+  background-color: #0072CE;
+  width: 80%;
+  height: 85px;
+  justify-content: center;
+  color: #fff !important;
 }
 
 .btn.detailsroute {
   margin-top: 1em!important;
 }
 
+.ui.container {
+  justify-content: space-between;
+}
+
+.ui.main.container {
+  margin: 0px !important;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  border: 1px solid gray;
+}
+
+.ui.inverted.button {
+  background: #DD0021;
+  color: #fff;
+  border-radius: 5em;
+  text-shadow: none!important;
+}
+
 @media only screen and (max-width: 767px) {
   
   h3.ui.header {
-    font-size: 1.5em!important;
+    font-size: 1.2em!important;
   }
 
 }

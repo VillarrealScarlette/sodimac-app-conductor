@@ -35,7 +35,10 @@ function HomePage({ history }) {
           </select>
           <Input type="text" placeholder="Patente Camión" className="margin element">
           </Input>
-          <Button onClick={() => history.push("/order")} size="huge" inverted>Ingresar<Icon name="right arrow" inverted /></Button>
+          <Button onClick={() => history.push("/order")} size="huge" inverted>
+            INGRESAR
+            <Icon name="right arrow" inverted />
+          </Button>
         </Container>
         
         </Segment>
