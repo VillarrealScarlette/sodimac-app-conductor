@@ -20,7 +20,7 @@ function DetailsRoute({ history }) {
             <p>Patente Camión: XX1234</p>
             <p>Empresa: Sodimac</p>
             <p>Cantidad de Guías de Despacho: 6</p>
-            <Button onClick={() => history.push("/map")} size="huge" className="btn detailsroute" inverted>
+            <Button onClick={() => history.push("/events")} size="huge" className="btn detailsroute" inverted>
             DETALLE RUTA
             <Icon name="right arrow" inverted />
           </Button>

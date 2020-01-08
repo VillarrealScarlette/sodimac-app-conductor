@@ -219,3 +219,10 @@ input {
   }
 
 }
+
+.btnGo{
+  display: flex;
+  justify-content: center;
+}
+
+

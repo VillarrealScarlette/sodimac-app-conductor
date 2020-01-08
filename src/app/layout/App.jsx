@@ -9,7 +9,7 @@ import Order from "../../features/order/order";
 import EventDetailedPage from "../../features/event/EventDetailed/EventDetailedPage";
 import PeopleDashboard from "../../features/user/PeopleDashboard/PeopleDashboard";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
-import EventForm from "../../features/event/EventForm/EventForm";
+//import EventForm from "../../features/event/EventForm/EventForm";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
@@ -28,12 +28,12 @@ class App extends Component {
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
 
-                <Route path="/events/:id" component={EventDetailedPage} />
+                {/* <Route path="/events/:id" component={EventDetailedPage} /> */}
                 <Route path="/people" component={PeopleDashboard} />
                 <Route path="/profile/:id" component={UserDetailedPage} />
                 <Route path="/settings" component={SettingsDashboard} />
-                <Route path="/events" component={EventDashboard} />
-                <Route path="/createevent" component={EventForm} />
+                {/* <Route path="/events" component={EventDashboard} /> */}
+                {/*<Route path="/createevent" component={EventForm} />*/}
                 <Route path="/detailsroute" component={DetailsRoute} />
                 <Route path="/map" component={Map} />
                 {/* <EventDashboard /> */}
