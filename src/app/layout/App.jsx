@@ -14,6 +14,8 @@ import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage"
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
 import RouteTime from "../../features/route/RouteTime";
+import OrderCheck from "../../features/order/OrderCheck";
+import OrderPhoto from "../../features/order/OrderPhoto";
 
 class App extends Component {
   render() {
@@ -38,6 +40,8 @@ class App extends Component {
                 <Route path="/detailsroute" component={DetailsRoute} />
                 <Route path="/map" component={Map} />
                 <Route path="/routetime" component={RouteTime} />
+                <Route path="/ordercheck" component={OrderCheck} />
+                <Route path="/orderphoto" component={OrderPhoto} />
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>
