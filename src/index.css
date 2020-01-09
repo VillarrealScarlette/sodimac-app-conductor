@@ -1,5 +1,14 @@
+html,
 body {
   background-color: rgb(234, 234, 234) !important;
+  min-height: 100vh;
+}
+
+.ui.column.grid > [class*="fourteen wide"].column,
+.ui.grid > .column.row > [class*="fourteen wide"].column,
+.ui.grid > .row > [class*="fourteen wide"].column,
+.ui.grid > [class*="fourteen wide"].column {
+  width: 100% !important;
 }
 
 /*timepicker style*/
@@ -29,8 +38,8 @@ body {
   height: 100vh;
 }
 
-#img-logo { 
-  width: 80%;
+#img-logo {
+  width: 100%;
 }
 
 /* .masthead.segment {
@@ -51,6 +60,9 @@ body {
   flex-direction: column;
   align-items: center;
   color: #152935;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .masthead h2 {
@@ -63,7 +75,7 @@ body {
 }
 
 .container.login {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 /* .footer.segment {
@@ -138,7 +150,7 @@ body {
   display: block !important;
 }
 
-.order{
+.order {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,31 +159,39 @@ body {
   height: 100vh;
 }
 
-#fontOrder{
- text-align: center;
- /* font-size:10px; */
- color:#333;
- padding-top: 200px;
- padding-left: 10px;
- padding-right: 10px;
+#fontOrder {
+  text-align: center;
+  /* font-size:10px; */
+  color: #333;
+  padding-top: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.inputorder{
+.inputorder {
   text-align: center;
-  height: 30px;
-  width: 250px;
+  height: 50px;
+  width: 300px;
   margin: 10px;
   border-radius: 5px;
 }
 
-.btnOrder{
+.btnOrder {
   /* border: dashed 3px #eee; */
   border-radius: 20px !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
   text-align: center !important;
- color: #FEFEFE !important;
- background: #DD0021 !important;
+  color: #fefefe !important;
+  background: #dd0021 !important;
+}
+
+.btnAceptar {
+  background: #dd0021;
+  color: #fff;
+  border-radius: 5em;
+  text-shadow: none !important;
+  width: 300px;
 }
 p {
   font-size: 1.1em;
@@ -179,16 +199,16 @@ p {
 }
 
 .header.text {
-  margin-bottom: 1em!important;
-  background-color: #0072CE;
-  width: 80%;
-  height: 85px;
+  margin-bottom: 1em !important;
+  background-color: #0072ce;
+  width: 100%;
+  height: 60px;
   justify-content: center;
   color: #fff !important;
 }
 
 .btn.detailsroute {
-  margin-top: 1em!important;
+  margin-top: 1em !important;
 }
 
 .ui.container {
@@ -206,10 +226,10 @@ input {
 }
 
 .ui.inverted.button {
-  background: #DD0021;
+  background: #dd0021;
   color: #fff;
   border-radius: 5em;
-  text-shadow: none!important;
+  text-shadow: none !important;
 }
 
 .charguing.route {
@@ -217,7 +237,7 @@ input {
 }
 
 .makeStyles-root-1 {
-  width: 70%;
+  width: 100%;
   display: grid;
 }
 
@@ -226,16 +246,20 @@ input {
 }
 
 @media only screen and (max-width: 767px) {
-  
   h3.ui.header {
-    font-size: 1.2em!important;
+    font-size: 1.2em !important;
   }
-
 }
 
-.btnGo{
+.btnGo {
   display: flex;
   justify-content: center;
 }
 
-
+@media only screen and (max-width: 767px) {
+  .ui.container.container-order {
+    /* width: 100%; */
+    margin-left: 3em !important;
+    margin-right: 1em !important;
+  }
+}

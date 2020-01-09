@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Segment, Item, Icon, List, Button } from "semantic-ui-react";
-import EventListAttendee from "../EventList/EventListAttendee";
+// import EventListAttendee from "../EventList/EventListAttendee";
 export default class EventListItem extends Component {
   render() {
     const { event, selectEvent, deleteEvent } = this.props;
@@ -15,14 +15,14 @@ export default class EventListItem extends Component {
                 <Item.Description> {event.hostedBy}</Item.Description>
               </Item.Content>
               <span>
-            {/* <Icon name="clock" /> {event.date} */}
-            <Icon name="marker" /> {event.venue}, {event.city}
-          </span>
+                {/* <Icon name="clock" /> {event.date} */}
+                <Icon name="marker" /> {event.venue}, {event.city}
+              </span>
             </Item>
           </Item.Group>
         </Segment>
         {/* <Segment> */}
-         
+
         {/* </Segment> */}
         {/* <Segment secondary>
           <List horizontal>
@@ -48,7 +48,7 @@ export default class EventListItem extends Component {
             floated="right"
             content="View"
           /> */}
-       {/*} </Segment>*/}
+        {/*} </Segment>*/}
       </Segment.Group>
     );
   }
