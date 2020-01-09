@@ -9,7 +9,7 @@ function Waze({ history }) {
         <Container text className="container login">
           <Button
             className="btn-close-map"
-            onClick={() => history.push("/ordercheck")}
+            onClick={() => history.push("/eventinroute")}
             size="small"
             inverted
           >
