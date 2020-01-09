@@ -19,11 +19,11 @@ function Photo({ history }) {
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">
-            <h1 id="fontPhoto"> Foto del Pedido</h1>
+            <h3 id="fontPhoto"> Foto del Pedido</h3>
             Foto del Pedido
             <Button
               size="small"
-              className="btn detailsroute"
+              className="btn-delete"
               primary
               onClick={() => history.push("/photoempty")}
             >
@@ -45,7 +45,7 @@ function Photo({ history }) {
             className="btn detailsroute"
             inverted
           >
-            OK
+            ACEPTAR
             <Icon name="right arrow" inverted />
           </Button>
         </Container>

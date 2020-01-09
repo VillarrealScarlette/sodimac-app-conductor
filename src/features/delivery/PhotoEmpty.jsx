@@ -19,9 +19,14 @@ function PhotoEmpty({ history }) {
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">
-            <h1 id="fontPhoto"> Foto del Pedido</h1>
+            <h3 id="fontPhoto"> Foto del Pedido</h3>
             Foto del Pedido
-            <Button size="small" className="btn detailsroute" primary>
+            <Button
+              size="small"
+              className="btn-delete"
+              primary
+              onClick={() => history.push("/photoempty")}
+            >
               Borrar
             </Button>
           </Container>
@@ -40,7 +45,7 @@ function PhotoEmpty({ history }) {
             className="btn detailsroute"
             inverted
           >
-            OK
+            SACAR FOTO
             <Icon name="right arrow" inverted />
           </Button>
         </Container>

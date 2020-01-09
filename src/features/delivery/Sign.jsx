@@ -10,7 +10,7 @@ import {
   Image
 } from "semantic-ui-react";
 
-function Sign({ history }) {
+function SignEmpty({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
@@ -19,13 +19,13 @@ function Sign({ history }) {
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">
-            <h1 id="fontPhoto">Formulário Firma</h1>
-            Foto del Pedido
+            <h3 id="fontPhoto">Formulario Firma</h3>
+
             <Button
               size="small"
-              className="btn detailsroute"
+              className="btn-delete"
               primary
-              onClick={() => history.push("/firmempty")}
+              onClick={() => history.push("/signempty")}
             >
               Borrar
             </Button>
@@ -45,7 +45,7 @@ function Sign({ history }) {
             className="btn detailsroute"
             inverted
           >
-            OK
+            ACEPTAR
             <Icon name="right arrow" inverted />
           </Button>
         </Container>
@@ -53,4 +53,4 @@ function Sign({ history }) {
     </Segment>
   );
 }
-export default withRouter(Sign);
+export default withRouter(SignEmpty);

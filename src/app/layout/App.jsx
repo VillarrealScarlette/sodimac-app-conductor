@@ -19,6 +19,7 @@ import Photo from "../../features/delivery/Photo";
 
 import Sign from "../../features/delivery/Sign";
 import SignEmpty from "../../features/delivery/SignEmpty";
+import Profile from "../../features/profile/Profile";
 
 class App extends Component {
   render() {
@@ -34,9 +35,9 @@ class App extends Component {
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
                 {/* <Route path="/events/:id" component={EventDetailedPage} /> */}
-                {/* <Route path="/people" component={PeopleDashboard} /> */}
-                <Route path="/profile/:id" component={UserDetailedPage} />
-                <Route path="/settings" component={SettingsDashboard} />
+                <Route path="/profile" component={Profile} />
+                {/* <Route path="/profile/:id" component={UserDetailedPage} />
+                <Route path="/settings" component={SettingsDashboard} /> */}
                 <Route path="/photo" component={Photo} />
                 <Route path="/photoempty" component={PhotoEmpty} />
                 <Route path="/signempty" component={SignEmpty} />
