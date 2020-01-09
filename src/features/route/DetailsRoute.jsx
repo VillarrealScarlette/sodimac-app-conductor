@@ -12,7 +12,7 @@ function DetailsRoute({ history }) {
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
         <Header as="h3" inverted className="header text">
-          Ruta Nº {route} - 08/01/2020
+          Ruta Nº {route} - 10/01/2020
         </Header>
         <Container text className="container-order">
           <p>Conductor: Juan Perez Perez</p>
