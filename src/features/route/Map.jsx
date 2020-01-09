@@ -16,7 +16,7 @@ function Map({ history }) {
         <Container text className="container login">
           <Button
             className="btn-go-map"
-            onClick={() => history.push("/photoempty")}
+            onClick={() => history.push("/ordercheck")}
             size="huge"
             inverted
           >

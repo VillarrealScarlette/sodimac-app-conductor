@@ -6,6 +6,7 @@ import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
 import Order from "../../features/order/order";
+import OrderCheck from "../../features/order/OrderCheck";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 //import EventForm from "../../features/event/EventForm/EventForm";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
@@ -45,6 +46,7 @@ class App extends Component {
                 <Route path="/waze" component={Waze} />
                 <Route path="/map" component={Map} />
                 <Route path="/routetime" component={RouteTime} />
+                <Route path="/ordercheck" component={OrderCheck} />
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>

@@ -6,11 +6,12 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
-export default function AlertDialog() {
+export default function AlertDialog({ history }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
+    history.push("/routetime");
   };
 
   const handleClose = () => {
@@ -22,6 +23,17 @@ export default function AlertDialog() {
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
         OPEN
       </Button>
+      <Container text className="container login">
+        <Button
+          onClick={{handleClickOpen}}
+          className="btnAceptar"
+          size="huge"
+          inverted
+        >
+          COMENZAR
+          <Icon name="right arrow" inverted />
+        </Button>
+      </Container>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -31,12 +43,15 @@ export default function AlertDialog() {
         <DialogTitle id="alert-dialog-title">{"Llegaste a tu destino!"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Sodimac indicará al cliente de que haz llegado.
+            ¿Enviar notificación de inicio de ruta a Sodimac?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary" autoFocus>
-            OK
+          <Button onClick={handleClose} color="default" autoFocus>
+            NO
+          </Button>
+          <Button onClick={handleClose} color="#DD0021" autoFocus>
+            SI
           </Button>
         </DialogActions>
       </Dialog>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Segment,
   Container,
@@ -11,6 +11,17 @@ import {
 import { NavLink, Linnk, withRouter } from "react-router-dom";
 
 function HomePage({ history }) {
+
+  const [userRUT, setUserRUT] = useState(null);
+
+  const [userPatent, setUserPatent] = useState(null);
+
+  function sentToLocalStorage(userRUT, userPatent) {
+    localStorage.setItem('RUT', JSON.stringify(userRUT));
+    localStorage.setItem('Patent', JSON.stringify(userPatent));
+    history.push("/order");
+  }
+
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
@@ -29,6 +40,7 @@ function HomePage({ history }) {
           type="text"
           className="margin element"
           placeholder="RUT 11111111-1"
+          onChange={(event) => setUserRUT(event.target.value)}
           min="0"
           max="10"
         ></Input>
@@ -42,8 +54,9 @@ function HomePage({ history }) {
           type="text"
           placeholder="Patente Camión"
           className="margin element"
+          onChange={(event) => setUserPatent(event.target.value)}
         ></Input>
-        <Button onClick={() => history.push("/order")} size="huge" inverted>
+        <Button onClick={() => sentToLocalStorage(userRUT, userPatent)} size="huge" inverted>
           INGRESAR
           <Icon name="right arrow" inverted />
         </Button>
