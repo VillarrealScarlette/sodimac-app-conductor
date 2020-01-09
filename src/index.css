@@ -263,3 +263,44 @@ input {
     margin-right: 1em !important;
   }
 }
+
+.ui.menu .item > img:not(.ui) {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.3em 0;
+  width: 100%;
+}
+
+.ui.menu .item > img:not(.ui) {
+  margin-right: 0 !important;
+}
+
+.ui.massive.image,
+.ui.massive.images .image,
+.ui.massive.images img,
+.ui.massive.images svg {
+  width: 1000px !important;
+  height: auto;
+  font-size: 1.71428571rem;
+}
+
+.btn-go-map {
+  width: 200px;
+  position: absolute;
+  left: 22%;
+  bottom: 15%;
+  z-index: 999;
+}
+
+#fontPhoto {
+  text-align: center;
+  /* font-size:10px; */
+  color: #333;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title-foto {
+  display: inline-flex !important;
+}
