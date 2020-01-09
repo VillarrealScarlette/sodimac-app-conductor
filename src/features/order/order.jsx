@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 import { Button, Icon, Container, Segment, Input } from "semantic-ui-react";
 
 function Order({ history }) {
+  const [numberRoute, setNumberRoute] = useState(null);
+
+  function sentToLocalStorage(numberRoute) {
+    localStorage.setItem('Route', JSON.stringify(numberRoute));
+    history.push("/detailsroute");
+    }
+
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div className="order">
@@ -11,6 +18,7 @@ function Order({ history }) {
         <Input
           type="text"
           placeholder="Número"
+          onChange={(event) => setNumberRoute(event.target.value)}
           //   className="margin element"
         ></Input>
         {/* <input className="inputorder" placeholder="Número" /> */}
@@ -19,7 +27,7 @@ function Order({ history }) {
         <Container text className="container login">
           <Button
             className="btnAceptar"
-            onClick={() => history.push("/detailsroute")}
+            onClick={() => sentToLocalStorage(numberRoute)}
             size="huge"
             inverted
           >

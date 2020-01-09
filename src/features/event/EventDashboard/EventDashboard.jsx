@@ -11,9 +11,9 @@ const eventsFromDashboard = [
     //category: "culture",
     //description:
     // "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.",
-    city: "Santiago",
-    venue: "Juanito Perez 10547, La florida",
-    hostedBy: "Dharma Herrera"
+    city: "Región Metropolitana",
+    venue: "Av. Libertad 987, Santiago Centro",
+    hostedBy: "Mariana Muñoz Lara"
     //hostPhotoURL: "https://randomuser.me/api/portraits/lego/1.jpg",
     //attendees: [
     //{
@@ -35,9 +35,9 @@ const eventsFromDashboard = [
     //category: "drinks",
     //description:
     //"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin ligula eu leo tincidunt, quis scelerisque magna dapibus. Sed eget ipsum vel arcu vehicula ullamcorper.",
-    city: "Santiago",
-    venue: "Hernando de Aguirre 2153",
-    hostedBy: "Carolina Ribeiro"
+    city: "Región Metropolitana",
+    venue: "Hernando de Aguirre 2153, Ñuñoa",
+    hostedBy: "Isidora Gonzalez Quiroz"
     //hostPhotoURL: "https://randomuser.me/api/portraits/lego/2.jpg",
     //attendees: [
     //{
