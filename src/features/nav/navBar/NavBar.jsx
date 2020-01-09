@@ -19,7 +19,7 @@ class NavBar extends Component {
           <Menu.Item as={NavLink} exact to="/detailsroute" header>
             <img src="assets/volver.svg" alt="logo" />
           </Menu.Item>
-          <Menu.Item as={NavLink} exact to="/" header>
+          <Menu.Item as={NavLink} exact to="/profile" header>
             <img src="assets/perfil.svg" alt="logo" />
           </Menu.Item>
           <Menu.Item as={NavLink} exact to="/map" header>
