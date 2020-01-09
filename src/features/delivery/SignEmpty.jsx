@@ -10,7 +10,7 @@ import {
   Image
 } from "semantic-ui-react";
 
-function FirmEmpty({ history }) {
+function SignEmpty({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
@@ -19,9 +19,9 @@ function FirmEmpty({ history }) {
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">
-            <h1 id="fontPhoto">Formulário Firma</h1>
-
-            <Button size="small" className="btn detailsroute" primary>
+            <h3 id="fontPhoto">Formulario Firma</h3>
+            Formulario Firma
+            <Button size="small" className="btn-delete" primary>
               Borrar
             </Button>
           </Container>
@@ -40,7 +40,7 @@ function FirmEmpty({ history }) {
             className="btn detailsroute"
             inverted
           >
-            OK
+            ACEPTAR
             <Icon name="right arrow" inverted />
           </Button>
         </Container>
@@ -48,4 +48,4 @@ function FirmEmpty({ history }) {
     </Segment>
   );
 }
-export default withRouter(FirmEmpty);
+export default withRouter(SignEmpty);

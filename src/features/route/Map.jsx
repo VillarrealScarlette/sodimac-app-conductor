@@ -16,11 +16,11 @@ function Map({ history }) {
         <Container text className="container login">
           <Button
             className="btn-go-map"
-            onClick={() => history.push("/ordercheck")}
+            onClick={() => history.push("/waze")}
             size="huge"
             inverted
           >
-            IR!
+            IR AL MAPA
             <Icon name="right arrow" inverted />
           </Button>
         </Container>

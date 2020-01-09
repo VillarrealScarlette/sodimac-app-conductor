@@ -6,6 +6,17 @@ function Waze({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
+        <Container text className="container login">
+          <Button
+            className="btn-close-map"
+            onClick={() => history.push("/photoempty")}
+            size="small"
+            inverted
+          >
+            CERRAR MAPA
+            {/* <Icon name="right arrow" inverted /> */}
+          </Button>
+        </Container>
         <Image
           size="massive"
           src="/assets/Waze.png"
@@ -13,17 +24,6 @@ function Waze({ history }) {
           id="img-map"
           style={{ marginBottom: 20 }}
         />
-        <Container text className="container login">
-          <Button
-            className="btn-go-map"
-            onClick={() => history.push("/routetime")}
-            size="huge"
-            inverted
-          >
-            CERRAR MAPA
-            <Icon name="right arrow" inverted />
-          </Button>
-        </Container>
       </Container>
     </Segment>
   );
