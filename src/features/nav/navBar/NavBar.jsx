@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Menu, Container, Button } from "semantic-ui-react";
-import { NavLink, Link, withRouter } from "react-router-dom";
-import SignedOutMenu from "./Menus/SignedOutMenu";
-import SignedInMenu from "./Menus/SignedInMenu";
+import { NavLink, withRouter } from "react-router-dom";
 
 class NavBar extends Component {
   state = {
@@ -15,30 +13,18 @@ class NavBar extends Component {
     this.props.history.push("/");
   };
   render() {
-    const { authenticated } = this.state;
     return (
-      <Menu inverted fixed="top">
+      <Menu inverted fixed="bottom">
         <Container>
-          <Menu.Item as={NavLink} exact to="/" header>
-            <img src="assets/logo.png" alt="logo" />
-            Invents
+          <Menu.Item as={NavLink} exact to="/events" header>
+            <img src="assets/orders.svg" alt="logo" />
           </Menu.Item>
-          <Menu.Item as={NavLink} to="/events" name="Events" />
-          <Menu.Item>
-            <Button
-              as={Link}
-              to="/createevent"
-              floated="right"
-              positive
-              inverted
-              content="Create Event"
-            />
+          <Menu.Item as={NavLink} exact to="/events" header>
+            <img src="assets/map.svg" alt="logo" />
           </Menu.Item>
-          {authenticated ? (
-            <SignedInMenu signOut={this.handleSignOut} />
-          ) : (
-            <SignedOutMenu signIn={this.handleSignIn} />
-          )}
+          <Menu.Item as={NavLink} exact to="/events" header>
+            <img src="assets/config.svg" alt="logo" />
+          </Menu.Item>
         </Container>
       </Menu>
     );
