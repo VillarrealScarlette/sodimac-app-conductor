@@ -16,14 +16,17 @@ class NavBar extends Component {
     return (
       <Menu inverted fixed="bottom">
         <Container>
-          <Menu.Item as={NavLink} exact to="/events" header>
-            <img src="assets/orders.svg" alt="logo" />
-          </Menu.Item>
-          <Menu.Item as={NavLink} exact to="/map" header>
-            <img src="assets/map.svg" alt="logo" />
+          <Menu.Item as={NavLink} exact to="/detailsroute" header>
+            <img src="assets/volver.svg" alt="logo" />
           </Menu.Item>
           <Menu.Item as={NavLink} exact to="/" header>
-            <img src="assets/config.svg" alt="logo" />
+            <img src="assets/perfil.svg" alt="logo" />
+          </Menu.Item>
+          <Menu.Item as={NavLink} exact to="/map" header>
+            <img src="assets/mapa.svg" alt="logo" />
+          </Menu.Item>
+          <Menu.Item as={NavLink} exact to="/events" header>
+            <img src="assets/pedidos.svg" alt="logo" />
           </Menu.Item>
         </Container>
       </Menu>
