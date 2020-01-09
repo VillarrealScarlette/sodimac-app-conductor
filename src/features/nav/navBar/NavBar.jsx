@@ -19,10 +19,10 @@ class NavBar extends Component {
           <Menu.Item as={NavLink} exact to="/events" header>
             <img src="assets/orders.svg" alt="logo" />
           </Menu.Item>
-          <Menu.Item as={NavLink} exact to="/events" header>
+          <Menu.Item as={NavLink} exact to="/map" header>
             <img src="assets/map.svg" alt="logo" />
           </Menu.Item>
-          <Menu.Item as={NavLink} exact to="/events" header>
+          <Menu.Item as={NavLink} exact to="/" header>
             <img src="assets/config.svg" alt="logo" />
           </Menu.Item>
         </Container>
