@@ -25,7 +25,7 @@ function SignEmpty({ history }) {
               size="small"
               className="btn-delete"
               primary
-              onClick={() => history.push("/signempty")}
+              onClick={() => history.push("/deliveredorder")}
             >
               Borrar
             </Button>
@@ -40,7 +40,7 @@ function SignEmpty({ history }) {
         </Container>
         <Container text className="container-order">
           <Button
-            onClick={() => history.push("/")}
+            onClick={() => history.push("/deliveredorder")}
             size="huge"
             className="btn detailsroute"
             inverted

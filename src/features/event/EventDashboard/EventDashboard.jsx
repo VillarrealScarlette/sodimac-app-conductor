@@ -1,12 +1,14 @@
 import React, { Component, Fragment } from "react";
 import { Grid, Button, Segment } from "semantic-ui-react";
 import EventList from "../EventList/EventList";
+import OrderCheck from "../../order/OrderCheck";
+import DeliveredOrder from "../../order/DeliveredOrder";
 //import EventForm from "../EventForm/EventForm";
 import cuid from "cuid";
 const eventsFromDashboard = [
   {
     id: "1",
-    title: "18257568466495938556",
+    title: "18255684",
     //date: "2018-03-27",
     //category: "culture",
     //description:
@@ -30,7 +32,7 @@ const eventsFromDashboard = [
   },
   {
     id: "2",
-    title: "739448260264854063",
+    title: "73944826",
     //date: "2018-03-28",
     //category: "drinks",
     //description:
@@ -134,6 +136,12 @@ class EventDashboard extends Component {
             events={events}
             //selectEvent={this.handleSelectEvent}
             //deleteEvent={this.handleDeleteEvent}
+          />
+          <OrderCheck
+          events={events}
+          />
+          <DeliveredOrder
+          events={events}
           />
         </Grid.Column>
       </Grid>

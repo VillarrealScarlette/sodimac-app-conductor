@@ -47,7 +47,7 @@ function AlertDialog({ history }) {
         <DialogActions>
           <Button onClick={handleClose}
           style={{
-            backgroundColor: "##bdbdbd"
+            backgroundColor: "#bdbdbd"
           }} autoFocus>
             NO
           </Button>

@@ -8,7 +8,7 @@ function OrderCheck({ history }) {
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
         <Header as="h3" inverted className="header text">
-          Pedido Nº 123456789
+          Pedido Nº 18255684 - 10/01/2020
         </Header>
         <Container text className="container-order">
           <p>Mariana Muñoz Lara</p>
