@@ -8,19 +8,17 @@ import HomePage from "../../features/home/HomePage";
 import Order from "../../features/order/order";
 import OrderCheck from "../../features/order/OrderCheck";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
-//import EventForm from "../../features/event/EventForm/EventForm";
-import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
 import RouteTime from "../../features/route/RouteTime";
-// import EventList from "../../features/event/EventList/EventList";
 import Waze from "../../features/route/Waze";
 import PhotoEmpty from "../../features/delivery/PhotoEmpty";
 import Photo from "../../features/delivery/Photo";
-
+import InRoute from "../../features/event/EventDashboard/InRoute";
 import Sign from "../../features/delivery/Sign";
 import SignEmpty from "../../features/delivery/SignEmpty";
 import Profile from "../../features/profile/Profile";
+
 
 class App extends Component {
   render() {
@@ -35,10 +33,6 @@ class App extends Component {
               <NavBar />
               <Container className="main">
                 <Route path="/events" component={EventDashboard} />
-                {/* <Route path="/events/:id" component={EventDetailedPage} /> */}
-                <Route path="/profile" component={Profile} />
-                {/* <Route path="/profile/:id" component={UserDetailedPage} />
-                <Route path="/settings" component={SettingsDashboard} /> */}
                 <Route path="/photo" component={Photo} />
                 <Route path="/photoempty" component={PhotoEmpty} />
                 <Route path="/signempty" component={SignEmpty} />
@@ -48,6 +42,7 @@ class App extends Component {
                 <Route path="/map" component={Map} />
                 <Route path="/routetime" component={RouteTime} />
                 <Route path="/ordercheck" component={OrderCheck} />
+                <Route path="/inroute" component={ InRoute }/>
                 {/* <EventDashboard /> */}
               </Container>
             </Fragment>
