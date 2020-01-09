@@ -13,7 +13,6 @@ import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
 import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
-import CompletedTrip from "../../features/route/CompletedTrip";
 import RouteTime from "../../features/route/RouteTime";
 
 class App extends Component {
@@ -38,7 +37,6 @@ class App extends Component {
                 <Route path="/detailsroute" component={DetailsRoute} />
                 <Route path="/detailsroute" component={DetailsRoute} />
                 <Route path="/map" component={Map} />
-                <Route path="/completedtrip" component={CompletedTrip} />
                 <Route path="/routetime" component={RouteTime} />
                 {/* <EventDashboard /> */}
               </Container>
