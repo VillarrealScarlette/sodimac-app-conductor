@@ -5,7 +5,7 @@ import NavBar from "../../features/nav/navBar/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
-import Order from "../../features/order/Order";
+import Order from "../../features/order/order";
 import EventDetailedPage from "../../features/event/EventDetailed/EventDetailedPage";
 import PeopleDashboard from "../../features/user/PeopleDashboard/PeopleDashboard";
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
