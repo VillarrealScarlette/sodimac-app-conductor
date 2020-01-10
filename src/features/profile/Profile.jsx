@@ -10,6 +10,7 @@ import {
 import { withRouter } from "react-router-dom";
 
 function Profile({ history }) {
+  const patent = JSON.parse(localStorage.getItem("Patent"));
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
@@ -29,7 +30,7 @@ function Profile({ history }) {
         />
         <Container text className="container-profile">
           <p className="p-profile">Conductor: Juan Perez Perez</p>
-          <p className="p-profile">Patente Camión: XX1234</p>
+          <p className="p-profile">Patente Camión: {patent}</p>
           <p className="p-profile">Empresa: Sodimac</p>
           <p className="p-profile">Cantidad de Guías de Despacho: 6</p>
         </Container>

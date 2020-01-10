@@ -12,12 +12,23 @@ function DeliveredOrder({ history }) {
           Pedido Nº 18255684 - 10/01/2020
         </Header>
         <Container text className="container-order">
-        <p>Mariana Muñoz Lara</p>
-        <p>Av. Libertad 987, Santiago Centro, Región Metropolitana</p>
-        <h4 style={{
-          color: "#152935",
-          fontSize: "1.5em",
-        }}>Cantidad de Productos: 2</h4>
+        <h4
+          style={{
+            color: "#152935",
+            fontSize: "1.5em"
+          }}
+        >
+          Mariana Muñoz Lara
+        </h4>
+          <p>Av. Libertad 987, Santiago Centro, Región Metropolitana</p>
+          <h4
+            style={{
+              color: "#152935",
+              fontSize: "1em"
+            }}
+          >
+            Cantidad de Productos: 2
+          </h4>
         <p>Mini refrigerador 102 litros, Teka</p>
         <p>MODELO: TS1-138</p>
         <p>SKU: 540560-2</p>

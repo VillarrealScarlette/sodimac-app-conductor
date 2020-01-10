@@ -11,30 +11,41 @@ function OrderCheck2({ history }) {
           Pedido Nº 73944826 - 10/01/2020
         </Header>
         <Container text className="container-order">
-          <p>Isidora Gonzalez Quiroz</p>
+          <h4
+            style={{
+              color: "#152935",
+              fontSize: "1.5em"
+            }}
+          >
+            Isidora Gonzalez Quiroz
+          </h4>
           <p>Hernando de Aguirre 2153, Ñuñoa, Región Metropolitana</p>
-          <h4 style={{
-            color: "#152935",
-            fontSize: "1.5em",
-          }}>Cantidad de Productos: 1</h4>
+          <h4
+            style={{
+              color: "#152935",
+              fontSize: "1em"
+            }}
+          >
+            Cantidad de Productos: 1
+          </h4>
           <Checkboxes/><p>Cama Americana Beat 1.5 plazas, Rosen</p>
           <p>MODELO: BEAT</p>
           <p>SKU: 287960-3</p>
           <Button
-            onClick={() => history.push("/photoempty2")}
-            size="huge"
-            className="btn detailsroute"
-            inverted
-          >
-            RECIBE
-          </Button>
-          <Button
             onClick={() => history.push("/notification2")}
-            size="huge"
-            className="btn detailsroute"
+            size="medium"
+            className="btn-delivery-left"
             inverted
           >
             NO RECIBE
+          </Button>
+          <Button
+            onClick={() => history.push("/photoempty2")}
+            size="medium"
+            className="btn-delivery-right"
+            inverted
+          >
+            RECIBE
           </Button>
         </Container>
       </div>
