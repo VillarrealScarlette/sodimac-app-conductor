@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
-import EventListItem from "./EventListItem";
-import AlertDialog from "../../../modal/AlertDialog";
+import AlertDone from "../../../modal/AlertDone";
+import EventCompletedRouteListItem from "./EventCompletedRouteListItem";
 import { Segment, Container, Header, Button, Icon } from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 
-class EventList extends Component {
+class EventCompletedRouteList extends Component {
   render() {
-    const route = JSON.parse(localStorage.getItem('Route'));
+    const route = JSON.parse(localStorage.getItem("Route"));
     const { events, selectEvent, deleteEvent, history } = this.props;
 
     return (
@@ -16,7 +16,7 @@ class EventList extends Component {
         </Header>
         <Container>
           {events.map(event => (
-            <EventListItem
+            <EventCompletedRouteListItem
               key={event.id}
               event={event}
               selectEvent={selectEvent}
@@ -24,22 +24,12 @@ class EventList extends Component {
             />
           ))}
           <Container text className="container login">
-            <Button
-              onClick={() => history.push("/routetime")}
-              className="btnAceptar"
-              size="huge"
-              inverted
-            >
-              COMENZAR
-              <Icon name="right arrow" inverted />
-            </Button>
-            <AlertDialog/>
+          <AlertDone />
           </Container>
-          {/* <Button className="btnGo" inverted></Button> */}
         </Container>
       </Segment>
     );
   }
 }
 
-export default withRouter(EventList);
+export default withRouter(EventCompletedRouteList);

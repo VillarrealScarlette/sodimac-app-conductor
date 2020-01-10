@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 
 class EventList extends Component {
   render() {
-    const route = JSON.parse(localStorage.getItem('Route'));
+    const route = JSON.parse(localStorage.getItem("Route"));
     const { events, selectEvent, deleteEvent, history } = this.props;
 
     return (
@@ -24,16 +24,7 @@ class EventList extends Component {
             />
           ))}
           <Container text className="container login">
-            <Button
-              onClick={() => history.push("/routetime")}
-              className="btnAceptar"
-              size="huge"
-              inverted
-            >
-              COMENZAR
-              <Icon name="right arrow" inverted />
-            </Button>
-            <AlertDialog/>
+            <AlertDialog />
           </Container>
           {/* <Button className="btnGo" inverted></Button> */}
         </Container>

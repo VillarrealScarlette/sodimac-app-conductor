@@ -2,7 +2,7 @@ import React from "react";
 import { Segment, Container, Button, Icon, Image } from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 
-function Map({ history }) {
+function Map2({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text>
@@ -16,7 +16,7 @@ function Map({ history }) {
         <Container text className="container login">
           <Button
             className="btn-go-map"
-            onClick={() => history.push("/waze")}
+            onClick={() => history.push("/waze2")}
             size="huge"
             inverted
           >
@@ -29,4 +29,4 @@ function Map({ history }) {
   );
 }
 
-export default withRouter(Map);
+export default withRouter(Map2);

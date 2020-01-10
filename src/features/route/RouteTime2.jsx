@@ -3,12 +3,12 @@ import { Segment, Container, Image, Button } from "semantic-ui-react";
 import Progress from "../../modal/Progress";
 import { withRouter } from "react-router-dom";
 
-function RouteTime({ history }) {
+function RouteTime2({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text className="charging route">
         <Button
-          onClick={() => history.push("/map")}
+          onClick={() => history.push("/map2")}
           style={{ background: "none", display: "contents" }}
         >
           <Image
@@ -27,4 +27,4 @@ function RouteTime({ history }) {
   );
 }
 
-export default withRouter(RouteTime);
+export default withRouter(RouteTime2);

@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Grid, Button, Segment } from "semantic-ui-react";
-import EventList from "./EventList";
+import EventInRouteList from "./EventInRouteList";
 const eventsFromDashboard = [
   {
     id: "1",
     title: "18255684",
-    status: "https://i.ibb.co/nktGQjk/cancelar.png",
+    status: "https://i.ibb.co/DzMJq0G/icono-en-ruta.png",
     city: "Región Metropolitana",
     venue: "Av. Libertad 987, Santiago Centro",
     hostedBy: "Mariana Muñoz Lara"
@@ -20,7 +20,7 @@ const eventsFromDashboard = [
   }
 ];
 
-class EventDashboard extends Component {
+class EventInRouteDashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,11 +34,11 @@ class EventDashboard extends Component {
     return (
       <Grid>
         <Grid.Column width={14}>
-          <EventList events={events} />
+          <EventInRouteList events={events} />
         </Grid.Column>
       </Grid>
     );
   }
 }
 
-export default EventDashboard;
+export default EventInRouteDashboard;
