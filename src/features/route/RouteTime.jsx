@@ -7,7 +7,7 @@ function RouteTime({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <Container text className="charging route">
-        <Button
+          <Button
           onClick={() => history.push("/map")}
           style={{ background: "none", display: "contents" }}
         >
