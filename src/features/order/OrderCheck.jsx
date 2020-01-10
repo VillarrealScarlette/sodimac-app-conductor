@@ -41,7 +41,7 @@ function OrderCheck({ history }) {
           </p>
 
           <Button
-            onClick={() => history.push("/events")}
+            onClick={() => history.push("/notification")}
             size="medium"
             className="btn-delivery-left"
             inverted

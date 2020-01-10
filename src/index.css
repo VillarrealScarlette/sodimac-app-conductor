@@ -405,3 +405,8 @@ input {
   border: none;
   outline: none;
 }
+
+.btn-notification{
+  border-radius: 5px !important;
+  color:#dd0021
+}
