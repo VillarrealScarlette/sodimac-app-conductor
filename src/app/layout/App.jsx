@@ -11,7 +11,6 @@ import NavBar from "../../features/nav/navBar/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
-import Notification from "../../features/event/EventDashboard/Notification"
 import Order from "../../features/order/order";
 import OrderCheck from "../../features/order/OrderCheck";
 import OrderCheck2 from "../../features/order/OrderCheck2";
@@ -25,15 +24,14 @@ import Map2 from "../../features/route/Map2";
 import RouteTime from "../../features/route/RouteTime";
 import RouteTime2 from "../../features/route/RouteTime2";
 
-// import EventList from "../../features/event/EventList/EventList";
-
 import Waze from "../../features/route/Waze";
 import Waze2 from "../../features/route/Waze2";
 import PhotoEmpty from "../../features/delivery/PhotoEmpty";
 import PhotoEmpty2 from "../../features/delivery/PhotoEmpty2";
 import Photo from "../../features/delivery/Photo";
 
-import InRoute from "../../features/event/EventDashboard/Notification";
+import Notification from "../../features/event/EventDashboard/Notification";
+import Notification2 from "../../features/event/EventDashboard/Notification2";
 
 import Photo2 from "../../features/delivery/Photo2";
 import Sign from "../../features/delivery/Sign";
@@ -41,7 +39,6 @@ import Sign2 from "../../features/delivery/Sign2";
 import SignEmpty from "../../features/delivery/SignEmpty";
 import SignEmpty2 from "../../features/delivery/SignEmpty2";
 import Profile from "../../features/profile/Profile";
-
 
 class App extends Component {
   render() {
@@ -60,7 +57,7 @@ class App extends Component {
                 <Route path="/eventinroute2" component={EventInRoute2Dashboard} />
                 {/* <Route path="/events/:id" component={EventDetailedPage} /> */}
                 <Route path="/profile" component={Profile} />
-                <Route path="/profile/:id" component={UserDetailedPage} />
+
                 {/* <Route path="/ordercheck" component={OrderCheck} /> */}
                 <Route path="/photo" component={Photo} />
                 <Route path="/photoempty" component={PhotoEmpty} />
@@ -80,7 +77,8 @@ class App extends Component {
                 <Route path="/ordercheck" component={OrderCheck} />
                 <Route path="/ordercheck2" component={OrderCheck2} />
                 <Route path="/deliveredorder" component={DeliveredOrder} />
-                <Route path="/notification" component={Notification }/>
+                <Route path="/notification" component={Notification}/>
+                <Route path="/notification2" component={Notification2}/>
                 {/* <EventDashboard /> */}
                 <Route path="/deliveredorder2" component={DeliveredOrder2} />
                 <Route path="/eventcheckdashboard" component={EventCheckDashboard} />
