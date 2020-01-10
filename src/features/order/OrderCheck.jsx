@@ -31,7 +31,7 @@ function OrderCheck({ history }) {
             RECIBE
           </Button>
           <Button
-            onClick={() => history.push("/eventinroute")}
+            onClick={() => history.push("/notification")}
             size="huge"
             className="btn detailsroute"
             inverted

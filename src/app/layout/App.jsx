@@ -11,7 +11,7 @@ import NavBar from "../../features/nav/navBar/NavBar";
 import { Container } from "semantic-ui-react";
 import { Route } from "react-router-dom";
 import HomePage from "../../features/home/HomePage";
-
+import Notification from "../../features/event/EventDashboard/Notification"
 import Order from "../../features/order/order";
 import OrderCheck from "../../features/order/OrderCheck";
 import OrderCheck2 from "../../features/order/OrderCheck2";
@@ -19,8 +19,6 @@ import DeliveredOrder from "../../features/order/DeliveredOrder";
 import DeliveredOrder2 from "../../features/order/DeliveredOrder2";
 
 import SettingsDashboard from "../../features/user/Settings/SettingsDashboard";
-//import EventForm from "../../features/event/EventForm/EventForm";
-import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage";
 import DetailsRoute from "../../features/route/DetailsRoute";
 import Map from "../../features/route/Map";
 import Map2 from "../../features/route/Map2";
@@ -28,17 +26,22 @@ import RouteTime from "../../features/route/RouteTime";
 import RouteTime2 from "../../features/route/RouteTime2";
 
 // import EventList from "../../features/event/EventList/EventList";
+
 import Waze from "../../features/route/Waze";
 import Waze2 from "../../features/route/Waze2";
 import PhotoEmpty from "../../features/delivery/PhotoEmpty";
 import PhotoEmpty2 from "../../features/delivery/PhotoEmpty2";
 import Photo from "../../features/delivery/Photo";
+
+import InRoute from "../../features/event/EventDashboard/Notification";
+
 import Photo2 from "../../features/delivery/Photo2";
 import Sign from "../../features/delivery/Sign";
 import Sign2 from "../../features/delivery/Sign2";
 import SignEmpty from "../../features/delivery/SignEmpty";
 import SignEmpty2 from "../../features/delivery/SignEmpty2";
 import Profile from "../../features/profile/Profile";
+
 
 class App extends Component {
   render() {
@@ -77,6 +80,8 @@ class App extends Component {
                 <Route path="/ordercheck" component={OrderCheck} />
                 <Route path="/ordercheck2" component={OrderCheck2} />
                 <Route path="/deliveredorder" component={DeliveredOrder} />
+                <Route path="/notification" component={Notification }/>
+                {/* <EventDashboard /> */}
                 <Route path="/deliveredorder2" component={DeliveredOrder2} />
                 <Route path="/eventcheckdashboard" component={EventCheckDashboard} />
                 <Route path="/eventcheck2dashboard" component={EventCheck2Dashboard} />
