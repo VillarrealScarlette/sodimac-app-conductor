@@ -15,7 +15,7 @@ function SignEmpty({ history }) {
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
         <Header as="h3" inverted className="header text">
-          Pedido 18257568466495938556
+          Pedido Nº 18255684 - 10/01/2020
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">

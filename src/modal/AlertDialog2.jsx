@@ -8,7 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { Container, Icon } from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 
-function AlertDialog({ history }) {
+function AlertDialog2({ history }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -17,7 +17,7 @@ function AlertDialog({ history }) {
 
   const handleClose = () => {
     setOpen(false);
-    history.push("/events");
+    history.push("/eventcheckdashboard");
   };
 
   return (
@@ -29,7 +29,7 @@ function AlertDialog({ history }) {
           size="huge"
           inverted
         >
-          COMENZAR
+          SIGUIENTE DESTINO
           <Icon name="right arrow" inverted />
         </Button>
       </Container>
@@ -52,7 +52,7 @@ function AlertDialog({ history }) {
           }} autoFocus>
             NO
           </Button>
-          <Button onClick={() => history.push("/routetime")}
+          <Button onClick={() => history.push("/routetime2")}
           style={{
             backgroundColor: "#DD0021",
             color: "white"
@@ -65,4 +65,4 @@ function AlertDialog({ history }) {
   );
 }
 
-export default withRouter(AlertDialog);
+export default withRouter(AlertDialog2);

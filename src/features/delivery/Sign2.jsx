@@ -20,14 +20,19 @@ function SignEmpty({ history }) {
         <Container className="container-font-photo">
           <Container className="title-foto">
             <h3 id="fontPhoto">Formulario Firma</h3>
-            Formulario Firma
-            <Button size="small" className="btn-delete" primary>
+
+            <Button
+              size="small"
+              className="btn-delete"
+              primary
+              onClick={() => history.push("/sign2")}
+            >
               Borrar
             </Button>
           </Container>
           <Image
             size="massive"
-            src="/assets/container-foto.png"
+            src="/assets/sign.png"
             alt="map"
             id="img-map"
             style={{ marginBottom: 20 }}
@@ -35,7 +40,7 @@ function SignEmpty({ history }) {
         </Container>
         <Container text className="container-order">
           <Button
-            onClick={() => history.push("/sign")}
+            onClick={() => history.push("/deliveredorder2")}
             size="huge"
             className="btn detailsroute"
             inverted

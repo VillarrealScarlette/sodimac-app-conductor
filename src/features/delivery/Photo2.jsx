@@ -10,7 +10,7 @@ import {
   Image
 } from "semantic-ui-react";
 
-function SignEmpty({ history }) {
+function Photo2({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
@@ -19,15 +19,20 @@ function SignEmpty({ history }) {
         </Header>
         <Container className="container-font-photo">
           <Container className="title-foto">
-            <h3 id="fontPhoto">Formulario Firma</h3>
-            Formulario Firma
-            <Button size="small" className="btn-delete" primary>
+            <h3 id="fontPhoto"> Foto del Pedido</h3>
+            Foto del Pedido
+            <Button
+              size="small"
+              className="btn-delete"
+              primary
+              onClick={() => history.push("/photoempty2")}
+            >
               Borrar
             </Button>
           </Container>
           <Image
             size="massive"
-            src="/assets/container-foto.png"
+            src="/assets/Box-photo.png"
             alt="map"
             id="img-map"
             style={{ marginBottom: 20 }}
@@ -35,7 +40,7 @@ function SignEmpty({ history }) {
         </Container>
         <Container text className="container-order">
           <Button
-            onClick={() => history.push("/sign")}
+            onClick={() => history.push("/signempty2")}
             size="huge"
             className="btn detailsroute"
             inverted
@@ -48,4 +53,4 @@ function SignEmpty({ history }) {
     </Segment>
   );
 }
-export default withRouter(SignEmpty);
+export default withRouter(Photo2);

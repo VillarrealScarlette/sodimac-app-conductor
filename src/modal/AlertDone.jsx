@@ -8,7 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import { Container, Icon } from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 
-function AlertDialog({ history }) {
+function AlertDone({ history }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -17,7 +17,7 @@ function AlertDialog({ history }) {
 
   const handleClose = () => {
     setOpen(false);
-    history.push("/events");
+    history.push("/eventcompletedroutedashboard");
   };
 
   return (
@@ -29,7 +29,7 @@ function AlertDialog({ history }) {
           size="huge"
           inverted
         >
-          COMENZAR
+          FINALIZAR RUTA
           <Icon name="right arrow" inverted />
         </Button>
       </Container>
@@ -39,10 +39,10 @@ function AlertDialog({ history }) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Inicio de Ruta"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">{"Finalización de Ruta"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            ¿Enviar notificación de inicio de ruta a Sodimac?
+            ¿Etas seguro que quieres finalizar la hoja de ruta?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -52,12 +52,12 @@ function AlertDialog({ history }) {
           }} autoFocus>
             NO
           </Button>
-          <Button onClick={() => history.push("/routetime")}
+          <Button onClick={() => history.push("/")}
           style={{
             backgroundColor: "#DD0021",
             color: "white"
           }} autoFocus>
-            SI
+            CERRAR SESION
           </Button>
         </DialogActions>
       </Dialog>
@@ -65,4 +65,4 @@ function AlertDialog({ history }) {
   );
 }
 
-export default withRouter(AlertDialog);
+export default withRouter(AlertDone);
