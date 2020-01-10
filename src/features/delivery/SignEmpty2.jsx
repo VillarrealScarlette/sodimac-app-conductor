@@ -10,7 +10,7 @@ import {
   Image
 } from "semantic-ui-react";
 
-function SignEmpty({ history }) {
+function SignEmpty2({ history }) {
   return (
     <Segment inverted textAlign="center" vertical className="masthead">
       <div text className="details">
@@ -35,7 +35,7 @@ function SignEmpty({ history }) {
         </Container>
         <Container text className="container-order">
           <Button
-            onClick={() => history.push("/sign")}
+            onClick={() => history.push("/sign2")}
             size="huge"
             className="btn detailsroute"
             inverted
@@ -48,4 +48,4 @@ function SignEmpty({ history }) {
     </Segment>
   );
 }
-export default withRouter(SignEmpty);
+export default withRouter(SignEmpty2);

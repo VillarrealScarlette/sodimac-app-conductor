@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
-import EventInRouteListItem from "./EventInRouteListItem";
+import EventInRoute2ListItem from "./EventInRoute2ListItem";
 
 import { Segment, Container, Header, Button, Icon } from "semantic-ui-react";
 import { withRouter } from "react-router-dom";
 
-class EventInRouteList extends Component {
+class EventInRoute2List extends Component {
   render() {
     const route = JSON.parse(localStorage.getItem("Route"));
     const { events, selectEvent, deleteEvent, history } = this.props;
@@ -16,7 +16,7 @@ class EventInRouteList extends Component {
         </Header>
         <Container>
           {events.map(event => (
-            <EventInRouteListItem
+            <EventInRoute2ListItem
               key={event.id}
               event={event}
               selectEvent={selectEvent}
@@ -30,4 +30,4 @@ class EventInRouteList extends Component {
   }
 }
 
-export default withRouter(EventInRouteList);
+export default withRouter(EventInRoute2List);

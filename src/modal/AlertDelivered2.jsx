@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function AlertDelivered({ history }) {
+function AlertDelivered2({ history }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -32,7 +32,7 @@ function AlertDelivered({ history }) {
     }
 
     setOpen(false);
-    history.push("/eventcheckdashboard");
+    history.push("/eventcompletedroutedashboard");
   };
 
   return (
@@ -53,4 +53,4 @@ function AlertDelivered({ history }) {
   );
 }
 
-export default withRouter(AlertDelivered);
+export default withRouter(AlertDelivered2);
